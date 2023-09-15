@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: salmon;
+}
+.container {
+    display: flex;
+    flex-flow:row wrap;
+    background-color: whitesmoke;
+}
+
+.box {
+    background: tomato;
+    border: 5px solid rgba(0,0,0,.2);
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.box:nth-child(2) {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container2 {
+    margin: 3rem;
+    display: flex;
+    border: 3px solid black;
+    height: 300px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 80vw;
+    max-width: 100vw;
+    min-height: 300px;
+    background-color: black;
+}
+
+
+.paragraf {
+    display: flex;
+    color: blanchedalmond;
+    margin: 0.5rem;
+}

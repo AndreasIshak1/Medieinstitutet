@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Begin reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/* To remove the space under the image */
+/* End reset */
+
+/* Begin Utility classes */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* End Utility classes */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    background-color: aliceblue;
+    /* background-image: url("images/cloudrain300x300.png"),
+        linear-gradient(to left, steelblue, white);
+     */
+    /* background-size: cover; */
+    /* background-repeat: repeat-y no-repeat;
+    background-size: 20%, auto; */
+
+}
+
+.profile-pic-figure {
+    width: 35%;
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    /* Make it rounded */
+    border-radius: 50%;
+}
+
+.container {
+    background-color: rgb(251, 210, 156);
+    background-image: url('images/part1.jpg');
+    background-image: url(https://www.canva.com/t/EAD2962NKnQ-rainbow-gradient-pink-and-purple-virtual-background/);
+    */ background-image: url('images/44.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.hero {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    /* Add a filter to the entire background image */
+    background-color: hsla(0, 0%, 100%, 0.40);
+
+
+}
+
+h1 {
+    font-size: 300%;
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+}
+
+.example {
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+
+.example img {
+    width: 25%;
+    /* 25% of the container not the window" */
+    height: auto;
+}
+
+.clip {
+    font-weight: 100%;
+    font-size: 2500%;
+    text-align: center;
+    background-image: url(images/CloudsWallpaper.jpg);
+    background-size: 100%;
+    background-position: top;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+
+    /* Look at 'Can I use background'  */
+    /* To work with firefox */
+    background-clip: text;
+
+    color: hsla(0, 0%, 0%, 0.2);
+    /* Or simply */
+    color: transparent;
+}

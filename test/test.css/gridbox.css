@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    background-color: blanchedalmond;
+    grid-auto-flow: column;
+    height: 300px;
+    margin: 1rem;
+
+}
+
+.box {
+    display: grid;
+    background-color: bisque;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    background-color: blueviolet;
+}
+
+
+.footer {
+    display: grid;
+    height: 200px;
+    background-color: brown;
+    align-items: start;
+    justify-content: center;
+}

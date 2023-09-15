@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    border: 1px solid black;
+    min-width: 80vw;
+    max-width: 100vw;
+    min-height: 300px;
+    margin: 10px;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    min-width: 100px;
+    height: 100px;
+    max-width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100px;
+}
+
+.box:nth-child(2) {
+    flex: 2 2 150px;
+    order: 0;
+}
