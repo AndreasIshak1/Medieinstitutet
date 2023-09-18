@@ -1,0 +1,134 @@
+/*
+
+First SASS file
+
+ 
+
+*/
+
+ 
+
+/* Variables */
+
+ 
+
+$textcolor: rgb(30, 151, 179);
+
+$size: 2rem;
+
+$primary-color: orange;
+
+$secondary-color: lightblue;
+
+$font-weights: (
+
+    "regular":400,
+
+    "medium":500,
+
+    "bold":700
+
+);
+
+ 
+
+$colors: (
+
+    "first": yellow,
+
+    "second": green,
+
+    "third": purple
+
+);
+
+ 
+
+$strong-color: red;
+
+$accent: yellow;
+
+ 
+
+@function weight($weight){
+
+  @return map-get($font-weights, $weight);
+
+}
+
+@function mycolor($mycolor){
+
+    @return map-get($colors, $mycolor);
+
+}  
+
+ 
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+@mixin fontstyle {
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: orangered;
+}
+ 
+
+.main {
+
+    background-color: $secondary-color;
+
+    color:$textcolor;
+ 
+    @include center;
+    .section {
+
+        font-weight: weight(bold);
+
+       
+
+        .p1 {
+
+            font-weight: weight(regular);
+
+            color: mycolor(first);
+
+        }
+
+    }
+
+    #{&}_section{
+
+        p {
+            
+            color: $accent;
+
+        }
+
+        p:hover {
+
+            color: $strong-color;
+
+        }
+
+        .lorem {
+            color: mycolor(third);
+        }
+
+        .p2 {
+            color: mycolor(second);
+            
+        }
+
+        .fonty {
+            @include fontstyle;
+            
+        }
+
+    }
+
+}

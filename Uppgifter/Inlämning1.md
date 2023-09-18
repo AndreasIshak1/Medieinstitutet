@@ -55,10 +55,10 @@ svar: Vi validerar koden genom att gå in på https://validator.w3.org/ och seda
 
             <label for="lastName">Last Name:</label>
             <input 
-            type="text" 
-            name="lastName" 
-            id="lastName"
-            required>
+                type="text" 
+                name="lastName" 
+                id="lastName"
+                required>
             <br><br>
 
             <label for="password">Password:</label>
