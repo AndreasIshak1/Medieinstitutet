@@ -1,0 +1,21 @@
+@media (max-width: 400px) {
+  .p1 {
+    width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .p2 {
+    width: 100px;
+  }
+}
+
+.design {
+  background-color: black;
+  font-size: 10px;
+  margin: 0;
+}
+
+/*                                                || Chatt ||
+
+*//*# sourceMappingURL=style.css.map */

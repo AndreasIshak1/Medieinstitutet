@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "flag flag flag flag" "baddy baddy baddy spalt" "sb tree tree spalt";
+}
+
+.box:nth-child(2) {
+  grid-area: flag;
+  margin: 1rem;
+}
+
+.box:first-child {
+  grid-area: baddy;
+  background-color: blue;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.box:nth-child(3) {
+  grid-area: spalt;
+  background-color: lightblue;
+  padding: 1rem;
+  color: white;
+}
+.box:nth-child(3) p:first-child::first-letter {
+  color: yellow;
+  font-size: 5rem;
+}
+
+.box:nth-child(4) {
+  display: flex;
+  grid-area: sb;
+  background-color: lightblue;
+  padding: 20px;
+  color: white;
+  font-size: 2rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+}
+
+.box:nth-child(5) {
+  grid-area: tree;
+  background-color: rgb(128, 0, 128);
+  padding: 1rem 1rem 0 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.header {
+  display: grid;
+  background-color: rgb(102, 51, 153);
+  height: 75px;
+  align-items: center;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.li:hover {
+  background-color: yellow;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.footer {
+  display: grid;
+  background-color: rgb(102, 51, 153);
+  color: white;
+  height: 75px;
+  justify-content: end;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem;
+}/*# sourceMappingURL=style.css.map */

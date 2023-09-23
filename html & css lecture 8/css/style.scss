@@ -1,0 +1,28 @@
+$primary-color: black;
+$secondary-color: gray;
+$transparent-color: rgba(114, 114, 146, 0.295);
+$mark-color: orange;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .last-name {
+    color: $mark-color;
+  }
+
+  .home {
+    padding: 20px;
+    color: $primary-color;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

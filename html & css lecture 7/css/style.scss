@@ -1,0 +1,28 @@
+$maxwidth: 400px;
+@mixin reduce($maxwidth, $width) {
+  @media (max-width: $maxwidth) {
+    width: $width;
+  }
+}
+
+.p1 {
+  @include reduce(400px, 200px)
+}
+
+.p2 {
+  @include reduce($maxwidth, 100px)
+}
+  
+@mixin new-layout{
+  font-size: 10px;
+  margin: 0;
+  @content
+}
+
+.design {
+  background-color: black;
+  @include new-layout;
+}
+   /*                                                || Chatt ||
+
+   */ 

@@ -1,0 +1,33 @@
+.body {
+  font-size: 2rem;
+  font-weight: bold;
+  .header2 {
+  color: blue;
+  }
+}
+
+/*
+ ska de inte va .p:nth-child? för a är väl anchor tag
+
+*/
+
+.p1 {
+    color: blue;
+}
+
+.p23 {
+  color: red;
+}
+
+.a:nth-child(3) {
+  color: red;
+}
+
+.a:nth-child(4) {
+  color: red;
+}
+
+#bigl::first-letter{
+  font-size: 5rem;
+  color: red;
+}
