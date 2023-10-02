@@ -7,6 +7,10 @@
 }
 
 body {
+  background-color: black;
+}
+
+body {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -30,6 +34,7 @@ body {
 
 .navbar-main:hover { /* navbar hover style */
   color: #d92cf9;
+  cursor: pointer;
 }
 
 .navbar-main:nth-child(1) { /* navbar Andreas åt vänster länken */
@@ -51,7 +56,7 @@ body {
   grid-area: kontakt;
 }
 
-.sektion1 { /* Första bild & text på sidan */
+.sektion1 { /* Första sektionen sidan */
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -60,14 +65,12 @@ body {
   padding-top: 20rem;
   background-image: url(../img/vimal.jpg);
   background-size: 100% 100%;
+  margin-bottom: 5rem;
 }
 
 img {
   width: 600px;
-}
-
-.container:hover {
-  color: #671f5a;
+  padding-top: 2rem; /*Om det var detta du menade med mellanrum*/
 }
 
 .h1-container1 {
@@ -84,8 +87,26 @@ img {
   color: #d92cf9;
 }
 
-.sektion2 {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-  background-color: orange;
+#sektion2 {
+  margin-top: rem;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+}
+
+.sektion2-flexbox {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border: 2px solid #d92cf9;
+  border-radius: 1%;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.sektion2-image {
+  margin-top: 1rem;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

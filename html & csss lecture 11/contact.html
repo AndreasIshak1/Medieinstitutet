@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <main class="main__contact">
+  <form action="https://httpbin.org/post" method="post">
+    <fieldset>
+      <legend>Personal info</legend>
+      <label for="firstname">
+        First Name:
+      </label>
+      <input name="firstName" type="text" id="firstname" autofocus required>
+      <label for="lastname">
+        Last Name:
+      </label>
+      <input name="lastname" type="text" id="lasttname" required>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Send Me a Message</legend>
+      <label for="message" name="message"></label>
+      <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+</body>
+</html>
