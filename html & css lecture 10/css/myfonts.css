@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+.font1 {
+  font-family: 'Sofia', cursive;
+  font-size: 2rem;
+  color: cadetblue;
+  font-weight: lighter;
+}
+
+.font2 {
+  font-family: 'Croissant One', cursive;
+  font-size: 2rem;
+  color: blue;
+  font-weight: bolder;
+  line-height: 85px;
+}
+
+.font3 {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 2rem;
+  color: red;
+}
+
+.font4 {
+  font-family: 'Tilt Prism', cursive;
+  font-size: 2rem;
+  color: orange;
+  font-weight: bold;
+}

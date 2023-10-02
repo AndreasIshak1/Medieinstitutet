@@ -1,0 +1,17 @@
+@function multi($row, $column) {
+    @return $row * $column 
+}
+
+.tablez {
+  border: 1px solid black;
+  @include multi()
+}
+
+.tablez1 {
+  border: 1px solid black;
+}
+
+.tablez2 {
+  border: 1px solid black;
+}
+
