@@ -1,0 +1,32 @@
+Händelser
+1.För att kunna agera på händelser behöver vi säga åt webbläsaren vad som skall hända vid händelsen.
+Detta gör vi genom att skriva en funktion och skriva kod i funktionen för vad som skall hända sedan.
+Sedan behöver vi på något sätt koppla ihop funktionen med något element i vår html.
+I denna övning kommer vi att börja med att göra en knapp som kör en funktion i vår js-fil.
+Börja med att skapa en html-fil och js-fil. Koppla ihop dem. 
+Skapa sedan en knapp i html-filen och sätt attributet onClick till att vara funktionen som du strax skall skriva i js-filen. 
+Skapa upp en funktion i js-filen som heter samma sak som det du skrev in i onClick för knappen. Inuti denna funktion skriv "Du klickade på knappen" i console.
+Testa genom att uppdatera din sida och kontrollera att texten kommer fram när du klickar. 
+
+2.Här kan det börja hända saker som inte riktigt fungerar som du har tänkt dig. Och det är också här som felsökning kan tänkas börja. Om allting fungerade bra från föregående uppgift kan du hoppa över denna uppgift.
+
+3.Så här långt har vi lagt in våra händelser i html-filen. Detta är lite pyssligt då vi behöver känna till vad som står i vår html för att kunna skriva funktioner i vår js-fil.
+Prova att lägga till följande rad längst uppe i js-filen:window.onload = function() {}Inuti denna funktion kan du skriva in det som behöver ske när sidan laddas.
+Kontroller att allting fungerar som tidigare. Annars är det dags att felsöka :)
+
+4.På samma sätt som vi skapade en funktion för klickhändelsen och skrev in onClick i html skall vi nu ändra så att händelsen registreras i js-filen istället för i html-filen. Börja med att ta bort onClick från knappen. Nu behöver du lägga till händelsen i js-filen istället för att få knappen att fungera som tidigare. Detta görs genom att hitta knappen (Se kapitlet Hitta saker) och köra funktionen addEventListener.
+Testa att göra detta nu och verifiera att knappen fungerar som tidigare.
+Nu har vi tagit bort beroendet mellan html och js filen och istället har vi bara definierat händelser och det som skall hända i js-filen. 
+På samma sätt som vi inte vill använda style för css vill vi helst låta bli att använda t.ex. onClick för händelser. 
+
+5.I ny html/js-fil, skapa upp en textruta och en knapp. 
+Skapa en registrering för klick-händelsen i din js-fil. Målet med denna övning är att skriva ut informationen från textrutan i html istället för i console. 
+Fundera över vad du behöver för information och förutsättningar för att kunna skriva ut informationen i html.
+Gör de förändringar som du behöver och implementera knapp-tryckningen så att texten som är skriven i textrutan kommer ut någonstans i din html.
+
+6.Fortsätt från föregående uppgift och skapa nu upp ytterligare en textruta. Syftet med denna övningar är att få användaren (du) att skriva in två stycken tal, ett i varje textruta, och sedan presenteras summan av talen när du klickar på knappen. I denna övning behöver du komma ihåg i vilken form dina tal kommer...
+7.Fortsättning från föregående uppgift. Om du inte redan har gjort detta, ändra nu så att textrutorna blir av type number. Detta gör som ni kommer ihåg att en användare bara kan mata in siffror i textrutorna. 
+Hjälper detta oss eller behöver vi fortfarande komma ihåg vilken typ som talen kommer med?
+8.Skapa upp en ny html/js-fil. I html, skapa upp en textruta och en knapp. 
+Skapa en funktion som skall köras när knappen klickas. Vid knapptryckningen vill jag att ni skapar upp funktionalitet för att jämföra om det tal som har skrivits in i textrutan är större än eller 
+mindreän 100. Om talet är större än 100, skriv ut "Det var ett stort tal" på skärmen. Annars skriver ni ut, "Det var ett litet tal" på skärmen. 
