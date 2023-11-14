@@ -17,9 +17,9 @@ const person1 = new Person("30", "Joel", "195");
 const person2 = new Person("30", "Simon", "183");
 const myFunction = document.getElementById("hejsan");
 const persons = [person, person1, person2];
-document.body.appendChild(myFunction);
+
 for (let i = 0; i < persons.length; i++) {
   const paragraph = document.createElement("p");
-  paragraph.innerHTML = persons[i];
+  paragraph.innerHTML = persons[i].height;
   myFunction.appendChild(paragraph);
 }
